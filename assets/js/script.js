@@ -12,13 +12,22 @@ navbarToggleBtn.addEventListener('click', function () {
 
 });
 
+const backBtn = document.querySelector('.back_to_top');
+backBtn.addEventListener('click', () => {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+});
+
 // Header Scroll
 let nav = document.querySelector(".navbar");
+let backToTop = document.querySelector(".back_to_top");
 window.onscroll = function () {
-  if (document.documentElement.scrollTop > 100) {
+  if (document.documentElement.scrollTop > 200) {
     nav.classList.add("header-scrolled");
+    backToTop.classList.add('open');
   } else {
     nav.classList.remove("header-scrolled");
+    backToTop.classList.remove('open');
   }
 }
 // Swiper js

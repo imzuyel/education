@@ -1464,7 +1464,6 @@ footer {
 
 
 /* Swiper js */
-
 .swiper {
   width: 100%;
   height: 100%;
@@ -1486,3 +1485,74 @@ footer {
   color: #fff;
   background: var(--red-orange-color-wheel);
 }
+
+/* ====================================================== */
+/* ===================== Back to top ==================== */
+/* ====================================================== */
+.back_to_top {
+  background: var(--ultramarine-blue);
+  border: 1px solid transparent;
+  height: 3rem;
+  width: 3rem;
+  position: fixed;
+  bottom: 0;
+  right: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s e;
+  -moz-transition: all 0.4s e;
+  -ms-transition: all 0.4s e;
+  -o-transition: all 0.4s e;
+  display: none;
+  border-radius: .2rem;
+  -webkit-border-radius: .2rem;
+  -moz-border-radius: .2rem;
+  -ms-border-radius: .2rem;
+  -o-border-radius: .2rem;
+  z-index: 12;
+}
+
+.back_to_top.open {
+  display: inline-block;
+}
+
+.back_to_top:hover {
+  background: transparent;
+  border-color: var(--red-orange-color-wheel);
+}
+
+.back_to_top:hover .icon {
+  color: var(--red-orange-color-wheel);
+}
+
+.back_to_top .icon {
+  position: relative;
+  animation: backToTop .3s infinite;
+  -webkit-animation: backToTop 1s infinite;
+  transition: all .5s linear infinite;
+  -webkit-transition: all .5s linear infinite;
+  -moz-transition: all .5s linear infinite;
+  -ms-transition: all .5s linear infinite;
+  -o-transition: all .5s linear infinite;
+  font-size: 1.7rem;
+  line-height: 1.7rem;
+  left: 10px;
+  color: var(--white);
+}
+
+@keyframes backToTop {
+  0% {
+    top: .8rem;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+
+/* ====================================================== */
+/* =================== Back to top end ================== */
+/* ====================================================== */

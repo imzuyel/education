@@ -143,11 +143,11 @@
       <!--============= Courses category section ==============-->
       <!--=====================================================-->
       <section class="category">
-        <p class="section-subtitle">Course Category</p>
-        <h2 class="section-title">Explore Popular Courses</h2>
+        <p class="section-subtitle" data-aos="fade-down">Course Category</p>
+        <h2 class="section-title" data-aos="fade-down">Explore Popular Courses</h2>
         <ul class="course-item-group">
           <!------- Single item ------->
-          <li class="course-category-item">
+          <li class="course-category-item" data-aos="zoom-in">
             <div class="wrapper">
               <img src="./assets/images/course-category-icon-1.png" alt="category icon" class="category-icon default">
 
@@ -164,7 +164,7 @@
 
           </li>
           <!------- Single item ------->
-          <li class="course-category-item">
+          <li class="course-category-item" data-aos="zoom-in">
             <div class="wrapper">
               <img src="./assets/images/course-category-icon-2.png" alt="category icon" class="category-icon default">
 
@@ -181,7 +181,7 @@
 
           </li>
           <!------- Single item ------->
-          <li class="course-category-item">
+          <li class="course-category-item" data-aos="zoom-in">
             <div class="wrapper">
               <img src="./assets/images/course-category-icon-3.png" alt="category icon" class="category-icon default">
               <img src="./assets/images/course-category-icon-3-w.png" alt="category icon white"
@@ -197,7 +197,7 @@
 
           </li>
           <!------- Single item ------->
-          <li class="course-category-item">
+          <li class="course-category-item" data-aos="zoom-in">
             <div class="wrapper">
               <img src="./assets/images/course-category-icon-4.png" alt="category icon" class="category-icon default">
 
@@ -215,7 +215,7 @@
 
           </li>
           <!------- Single item ------->
-          <li class="course-category-item">
+          <li class="course-category-item" data-aos="zoom-in">
             <div class="wrapper">
               <img src="./assets/images/course-category-icon-5.png" alt="category icon" class="category-icon default">
               <img src="./assets/images/course-category-icon-5-w.png" alt="category icon white"
@@ -231,7 +231,7 @@
 
           </li>
           <!------- Single item ------->
-          <li class="course-category-item">
+          <li class="course-category-item" data-aos="zoom-in">
             <div class="wrapper">
               <img src="./assets/images/course-category-icon-6.png" alt="category icon" class="category-icon default">
               <img src="./assets/images/course-category-icon-6-w.png" alt="category icon white"
@@ -253,7 +253,7 @@
       <!--=====================================================-->
       <!--=================== About section ===================-->
       <!--=====================================================-->
-      <section class="about" id="about">
+      <section class="about" id="about" data-aos="zoom-in">
         <div class="about-left">
           <div class="img-box">
             <img src="./assets/images/about-img-bg.png" alt="about bg" class="about-bg">
@@ -298,7 +298,7 @@
       <!--=====================================================-->
       <!--================== Courses section ==================-->
       <!--=====================================================-->
-      <section class="course" id="course">
+      <section class="course" id="course" data-aos="zoom-in">
         <p class="section-subtitle">Our Online Courses</p>
         <h2 class="section-title">Find The Right Online Course For You</h2>
         <div class="course-grid">
@@ -549,7 +549,7 @@
       <!--=====================================================-->
       <!--=================== Event section ===================-->
       <!--=====================================================-->
-      <section class="event">
+      <section class="event" data-aos="zoom-in">
         <div class="event-left">
           <div class="event-banner">
             <img src="./assets/images/event-img.jpg" alt="event banner" class="banner-img">
@@ -617,7 +617,7 @@
       <!--=====================================================-->
       <!--================= Features section ==================-->
       <!--=====================================================-->
-      <section class="features">
+      <section class="features" data-aos="zoom-in">
         <div class="features-left">
           <p class="section-subtitle">Our Features</p>
           <h2 class="section-title">See What Our Mission Are</h2>
@@ -668,7 +668,7 @@
       <!--=====================================================-->
       <!--================ Instructor section =================-->
       <!--=====================================================-->
-      <section class="instructor">
+      <section class="instructor" data-aos="zoom-in">
         <p class="section-subtitle">Best Coach</p>
         <h2 class="section-title">Our Expert Instructor</h2>
         <div class="instructor-grid">
@@ -757,7 +757,7 @@
       <!--=====================================================-->
       <!--================ Testimonial section ================-->
       <!--=====================================================-->
-      <section class="testimonials">
+      <section class="testimonials" data-aos="zoom-in">
         <div class="testimonials-left">
           <p class="section-subtitle">Testimonial</p>
           <h2 class="section-title">What Our Client Says About Us</h2>
@@ -845,7 +845,7 @@
       <!--=====================================================-->
       <!--=================== Blog Section ====================-->
       <!--=====================================================-->
-      <section class="blog" id="blog">
+      <section class="blog" id="blog" data-aos="zoom-in">
         <p class="section-subtitle">Our Blog</p>
         <h2 class="section-title">Latest Blog & News</h2>
         <div class="blog-grid">
@@ -1021,7 +1021,15 @@
     <!--=====================================================-->
   </div>
 
-
+  <!--=====================================================-->
+  <!--==================== Back to top ====================-->
+  <!--=====================================================-->
+  <div class="back_to_top open">
+    <i class="icon">⬆</i>
+  </div>
+  <!--=====================================================-->
+  <!--================== Back to top end ==================-->
+  <!--=====================================================-->
   <!------ ionicon link ------->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -1029,6 +1037,12 @@
   <!-- Swiper js -->
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
+  <!-- Data aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <!----- custom js link ------>
   <script src="./assets/js/script.js"></script>
 </body>
